@@ -1,4 +1,4 @@
-import useFormatTime from '../../hooks/useFormatTime';
+import FormattedTime from '../formattedTime';
 
 const LapsLogger = ({ laps }: { laps: number[] }) => {
   return (
@@ -9,13 +9,12 @@ const LapsLogger = ({ laps }: { laps: number[] }) => {
 };
 
 const Lap = ({ time, index }: { time: number; index: number }) => {
-  const { getFormattedTime } = useFormatTime();
-  const { hours, minutes, seconds, milliSeconds } = getFormattedTime(time);
-
   return (
     <div className="lapsRow">
       <div>Lap {index + 1}</div>
-      <div>{`${hours}:${minutes}:${seconds}.${milliSeconds}`}</div>
+      <div>
+        <FormattedTime time={time} />
+      </div>
     </div>
   );
 };
