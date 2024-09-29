@@ -17,3 +17,17 @@
   justify-content: center;
   align-items: center;
 }
+
+.lapsContainer {
+  margin: 3rem auto 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.lapsRow {
+  padding: 0.5rem;
+  border: 1px solid rgb(73, 73, 73);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
