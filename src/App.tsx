@@ -3,7 +3,7 @@ import './App.css';
 const App = () => {
   return (
     <>
-      <h3>App Name</h3>
+      <h3>Stopwatch with laps history</h3>
     </>
   );
 };

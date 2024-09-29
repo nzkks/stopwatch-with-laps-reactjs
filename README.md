@@ -1,6 +1,6 @@
-# App Name
+# Stopwatch with laps history
 
-App Details
+Stopwatch with laps history using Reactjs
 
 ---
 
